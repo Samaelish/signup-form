@@ -45,7 +45,7 @@ function SignUpForm() {
     const formErrors = validate()
     if (Object.keys(formErrors).length === 0) {
       console.log('Form submitted successfully:', formData)
-      // Handle form submission (e.g., send data to server)
+      // Handle form submission
       setFormData({ ...initialState })
       setErrors({})
     } else {
