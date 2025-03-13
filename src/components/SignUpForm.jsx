@@ -55,25 +55,25 @@ function SignUpForm() {
 
   return (
     <div className='signup-form'>
-      <h2>Create Account</h2>
+      <h2>Создайте аккаунт</h2>
       <form onSubmit={handleSubmit}>
         <div className='form-group'>
-          <label>Username*</label>
+          <label>Имя пользователя</label>
           <input type='text' name='username' value={formData.username} onChange={handleChange} required />
           {errors.username && <span className='error'>{errors.username}</span>}
         </div>
         <div className='form-group'>
-          <label>Email*</label>
+          <label>Эл. почта</label>
           <input type='email' name='email' value={formData.email} onChange={handleChange} required />
           {errors.email && <span className='error'>{errors.email}</span>}
         </div>
         <div className='form-group'>
-          <label>Password*</label>
+          <label>Пароль</label>
           <input type='password' name='password' value={formData.password} onChange={handleChange} required />
           {errors.password && <span className='error'>{errors.password}</span>}
         </div>
         <div className='form-group'>
-          <label>Confirm Password*</label>
+          <label>Подтверждение пароля</label>
           <input
             type='password'
             name='confirmPassword'
@@ -83,7 +83,7 @@ function SignUpForm() {
           />
           {errors.confirmPassword && <span className='error'>{errors.confirmPassword}</span>}
         </div>
-        <button type='submit'>Sign Up</button>
+        <button type='submit'>Регистрация</button>
       </form>
     </div>
   )
