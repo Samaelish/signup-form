@@ -1,13 +1,9 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem 0;
-  text-align: center;
-}
 body {
+  margin: 0;
   display: flex;
   justify-content: center;
-  background: linear-gradient(lightblue, blue);
+  align-items: center;
+  background: linear-gradient(#9198e5, #e66465);
   min-width: 320px;
   min-height: 100vh;
 }
